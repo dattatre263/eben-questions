@@ -1,5 +1,11 @@
 /**
+ *
  * Created by dparupud on 7/19/15.
+ *
+ * Answer to Question 3
+ *
+ * Please see the javadocs for the necessary method and sufficient method below.
+ *
  */
 package org.datta;
 public class Question3 {
@@ -21,7 +27,8 @@ public class Question3 {
     private static void necessary() {
         final HotelRoom possibleRoom = new HotelRoom(new Bed());
         assert possibleRoom.getBed() != null;
-        //Throws an assertion error
+
+        //following Throws an assertion error
         try {
             HotelRoom impossibleRoom = new HotelRoom(null);
         } catch (AssertionError e) {
@@ -35,7 +42,7 @@ public class Question3 {
      * The minimum requirement for a Hotel to exist is at least a Bed.
      * A television is only optional and so not part of the constructor.
      *
-     * Therefore a Bed is sufficient for a Hotelroom to exist.
+     * Therefore a Bed is sufficient for a Hotel Room to exist.
      */
     private static void sufficient() {
         final HotelRoom possibleRoom = new HotelRoom(new Bed());
@@ -46,7 +53,7 @@ public class Question3 {
 
     private static class HotelRoom {
         private final Bed bed;
-        private Television telivision ;
+        private Television television ;
         public HotelRoom(final Bed bed){
             //Bed cannot be null
             assert bed !=null;
@@ -57,12 +64,12 @@ public class Question3 {
             return bed;
         }
 
-        public Television getTelivision() {
-            return telivision;
+        public Television getTelevision() {
+            return television;
         }
 
         public void setTelivision(Television telivision) {
-            this.telivision = telivision;
+            this.television = television;
         }
     }
 

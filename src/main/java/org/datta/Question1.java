@@ -2,6 +2,10 @@ package org.datta;
 
 /**
  * Created by dparupud on 7/19/15.
+ *
+ * Answer to Question1
+ *
+ * Yes it is a true statement. See the assertions below
  */
 public class Question1 {
 

@@ -2,6 +2,9 @@ package org.datta;
 
 /**
  * Created by dparupud on 7/19/15.
+ * Answer to Question 5
+ *
+ * The fourth number is 9 as seen by the examples below.
  */
 public class Question5 {
 

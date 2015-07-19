@@ -3,7 +3,10 @@ package org.datta;
 import java.util.Random;
 
 /**
- * Created by dparupud on 7/19/15.
+ * Answer to Question 4
+ *
+ * The probability of getting a bag that has both white marbles is 1/3.
+ *
  */
 public class Question4 {
 
@@ -20,10 +23,10 @@ public class Question4 {
 
         // The probability of one picking bag1 is 1/3
         int i = random.nextInt(3);
-        String[] bag = (String[]) obj[i];
-
-        System.out.println(bag[1]);
-
+        if( i == 0){
+            String[] bag = (String[]) obj[i];
+            System.out.println(bag[1]);
+        }
 
     }
 }
